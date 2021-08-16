@@ -1,5 +1,2 @@
-FROM php:7.4-fpm
-COPY ./ /usr/src/myapp/
-WORKDIR /usr/src/myapp
-CMD [ "php", "./index.php" ]
-
+FROM httpd:2.4
+COPY ./ /usr/local/apache2/htdocs/
